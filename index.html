@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>Title of the document</title>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Bow And Bounty</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/1.2.0/css/uikit.gradient.min.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
 
-	<body>
-	The content of the document......
-	</body>
+    <body style="padding:0px;">
+        <div class="uk-container uk-container-center" style="background-color: rgb(255, 238, 195);">
+            <div class="uk-grid">
+                <div id="navigation" class="uk-width-medium-1-4">
+                    <h1 class="nav-header">Bow And Bounty</h1>
+                    
+    
+    
+        
+    
+    <a class="nav-header" href="ziek-za.github.io">ziek-za.github.io</a>
 
+
+                    <ul class="uk-nav uk-nav-side" style="position:fixed;">
+                        <li><a href="#factsheet">Factsheet</a></li>
+                        <li><a href="#description">Description</a></li>
+                        
+    
+        <li><a href="#history">History</a></li>
+                        <li><a href="#story">Story Line</a></li>
+						<li><a href="#screenshots">In-game screenshots</a></li>
+                        <li><a href="#features">Game Features</a></li>
+						<li><a href="#collision">Collision Detection</a></li>
+						<li><a href="#AI">AI and Pathfinding</a></li>
+						<br></br>
+						<li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div id="content" class="uk-width-medium-3-4">
+
+                    
+
+                    <div class="uk-grid">
+						<img src="images/header.jpg" style="margin-bottom:20px;">
+						<p style="margin-top:-20px;float:right;">Image source: <a href="http://www.diablofans.com/forums/site-related/news-announcements/1711-the-demon-hunter-unveiled"> link</a></p>
+						
+                        <div class="uk-width-medium-2-6">
+                            <h2 id="factsheet">Factsheet</h2>
+                            <p>
+                                <strong>Developer:</strong><br/>
+                                Papathanasiou, Darryn
+                                
+                            </p>
+
+                            
+    
+        <p>
+            <strong>Founding date:</strong><br/>
+            2014
+        </p>
+    
+
+
+                            
+                                <p>
+                                    <strong>Website:</strong><br/>
+                                    
+                                    
+                                        
+                                    
+                                    <a href="ziek-za.github.io">ziek-za.github.io</a>
+                                </p>
+                            
+
+                            
+    
+        <p>
+            <strong>Press / Business Contact:</strong><br/>
+            <a href="mailto:PPTDAR001@myUCT.ac.za">PPTDAR001@myUCT.ac.za</a>
+        </p>
+    
+
+    
+
+
+    
+        <p>
+            <strong>Phone:</strong><br/>
+            +27 72 5548 520
+        </p>
+    
+
+
+                        </div>
+
+                        <div class="uk-width-medium-4-6">
+								
+                                <h2>Developer Description</h2>
+                                <p>I am currently second year at <strong>University of Cape Town</strong> studying <i>Computer Science</i> and <i>Games Development</i>. The game which is presented below is my final project for <strong>CSC2003S</strong> which is a game development and theory course.</p>
+								
+								<h2>Game Description</h2>
+								<p>
+								<strong>Bow And Bounty</strong>
+								<br></br>
+								You are a bounty hunter in medieval times and through the use of bow and arrows hunt down most wanted criminals – and given the choice of capturing or killing. You are gifted with special powers which aid in your tasks. As the game progresses, opponents get harder to overcome but your powers get stronger along with your abilities to use a bow and arrow.
+								<br></br>
+								You begin with a simple starting bow and a single skill (or power) at its lowest level. There are two main power streams, namely nature and fire – whereby nature is the more innocent power stream and fire being the opposite.
+								<br></br>
+								You will receive experience points and gold from killing or capturing enemies, gold will increase your bow capabilities and experience will increase your powers and shooting abilities.
+								</p>
+                            
+
+                            
+    
+        <h2 id="story">Story Line</h2>
+            <p>The player’s character unknowingly comes from a long line of sorcerers and soldiers and is destined to become a powerful mixture of the two. The character has neither relatives nor the ability to maintain an ordinary job. With nothing to lose the character embarks on a mission to hunt down criminals for rewards. This is the beginning of a long career of being a bounty hunter. Once accomplishing missions the character slowly finds out who he/she truly is, as the players in game actions shape them..</p>
+        
+        
+    
+
+    
+
+    </ul>
+
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    
+                        <h2 id="screenshots">In-Game screenshots</h2>
+							<strong>Enemy chasing the player</strong>
+							<br></br>
+							<i style="color:gray;">Once the player gets to close to the enemy, the enemy will begin to chase the player and attack.</i>
+                            <p>
+								<img src="images/gameplay-1.jpg">
+								</p>
+								<strong>Enemy makings its way to the exit point</strong>
+								<br></br>
+							<i style="color:gray;">Once the enemy finds its way to the exit point the player will lose as the enemy has succesfully escaped.</i>
+							<p>
+								<img src="images/gameplay-2.jpg">
+
+                            </p>
+
+
+                        
+                        <hr>
+                    
+
+                    
+
+                    
+
+
+                    
+                        <h2 id="features">Game Features</h2>
+                        <ul>
+                            
+                                <li>Shoot arrows.</li>
+                            
+                                <li>Influence arrows velocity with your own velocity/movement.</li>
+                            
+                                <li>Unique camera movement for long range shots.</li>
+                            
+                                <li>Attack and kill enemies.</li>
+								
+								<li>Flee enemies.</li>
+								
+                            
+                        </ul>
+                        <hr>
+                    
+
+                    
+
+                    
+                        <h2 id="collision">Collision Detection</h2>
+                        <p>
+						Arrows and players abilities will require collision detection, apart from the main player’s movements. They will be colliding with enemies, walls and other objects or hit nothing and fall to the ground as they travel to far. The mechanics behind arrows will need to be efficient and have a natural feel as they make up a large part of the gameplay.
+In later levels, enemies need to have the ability to ‘out skill’ players by dodging their oncoming projectiles.</p>
+                        <hr>
+                    
+
+                    <!--  -->
+                    
+                        <h2 id="AI">AI and Pathfinding</h2>
+                        
+                            <p>
+								<strong>AI</strong>
+								<br></br>
+                                Enemies need to be able to dodge incoming projectiles, and either attack or flee. If the player gets to close, the enemy has the ability to attack which might result in a mission failure depending on the health points of the player. Therefore it is in the player’s interest to stay back and fire from a distance.
+								<br></br>
+								When the enemy is fleeing, if they manage to get far enough away the mission is a failure. The enemy therefore needs to navigate through terrain effectively.
+								<br></br>
+								<strong>Pathfinding</strong>
+								<br></br>
+								Pathfinding techniques involved include A* pathfinding. This is used in enemies fleeing the player and chasing the player. Since there is a lot of obstacles involved and the need for natural movement, it was essential to implement it.
+                            </p>
+                        
+
+                        <hr>
+                    
+
+                    
+                        <div class="uk-grid">
+                            
+                                <div class="uk-width-medium-1-2">
+                                    <h2 id="credits">Team & Repeating Collaborators</h2>
+
+                                    
+                                        <p>
+                                        <strong>Papathanasiou, Darryn </strong><br/>
+										<i style="color:gray;">Head Game Developer</i>
+                                        
+                                        </p>
+                                    
+
+                                </div>
+                            
+
+                            
+                                <div class="uk-width-medium-1-2">
+                                    <h2 id="contact">Contact</h2>
+
+                                    
+                                        <p>
+                                        
+                                        
+                                            <strong>Head Game Developer</strong><br/><a href="pptdar001@myUCT.ac.za">pptdar001@myUCT.ac.za</a>
+                                        
+
+                                        
+                                        </p>
+                                    
+
+                                </div>
+                            
+                        </div>
+                        <hr>
+                    
+
+
+                    <p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="credits.html">these fine folks</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>      
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                var container = $('.images');
+
+                container.imagesLoaded( function() {
+                    container.masonry({
+                        itemSelector: '.uk-width-medium-1-2',
+                    });
+                });
+            });
+        </script>
+
+        
+    </body>
 </html>
